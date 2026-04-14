@@ -54,8 +54,8 @@ button {
 }
 
 .image-container img {
-    max-width: 95vw;
-    max-height: 95vh;
+    max-width: 110vw;
+    max-height: 110vh;
     object-fit: contain;
 }
 
@@ -95,9 +95,9 @@ button {
 
 <script>
 const quiz = [
-    { img: "bild1.jpg", question: "Was ist auf dem Bild?", answer: "auto" },
-    { img: "bild2.jpg", question: "Welches Tier ist das?", answer: "katze" },
-    { img: "bild3.jpg", question: "Welches Obst ist das?", answer: "apfel" }
+    { img: "Zauberer.jpg", question: "Was ist auf dem Bild?", answer: "Zauberer" },
+    { img: "bild2.jpg", question: "Welches Tier ist das?", answer: "Frosch" },
+    { img: "bild3.jpg", question: "Welches Obst ist das?", answer: "Schwein" }
 ];
 
 let current = 0;
@@ -116,7 +116,7 @@ const nextBtn = document.getElementById("nextBtn");
 // 🔥 gemeinsame Funktion
 function updateSpotlight(x, y) {
     const rect = container.getBoundingClientRect();
-    const radius = rect.width * 0.12;
+    const radius = rect.width * 0.05;
 
     overlay.style.maskImage =
         `radial-gradient(circle ${radius}px at ${x}px ${y}px, transparent 0%, black 100%)`;
