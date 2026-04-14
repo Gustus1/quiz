@@ -48,8 +48,8 @@ button {
 
     transform: translate(-50%, -50%);
 
-    width: 110vw;
-    height: 110vh;
+    width: 100vw;
+    height: 100vh;
 
     object-fit: contain;
 }
@@ -160,7 +160,7 @@ function createSparkles(x, y) {
 /* Spotlight */
 function updateSpotlight(x, y) {
     const rect = container.getBoundingClientRect();
-    const radius = rect.width * 0.05;
+    const radius = rect.width * 0.08;
 
     overlay.style.maskImage =
         `radial-gradient(circle ${radius}px at ${x}px ${y}px, transparent 0%, black 100%)`;
