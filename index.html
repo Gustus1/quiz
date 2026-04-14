@@ -157,7 +157,7 @@ container.addEventListener("touchmove", (e) => {
     const rect = container.getBoundingClientRect();
     const t = e.touches[0];
 
-    const radius = rect.width * 0.25;
+    const radius = rect.width * 0.08;
 
     overlay.style.maskImage =
         `radial-gradient(circle ${radius}px at ${t.clientX - rect.left}px ${t.clientY - rect.top}px, transparent 0%, black 100%)`;
