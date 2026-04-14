@@ -40,20 +40,18 @@ button {
 }
 
 /* Bild größer (110%) */
-.image-container {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .image-container img {
-    width: 80vw;
-    height: 80vh;
-    object-fit: cover;
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 110vw;
+    height: 110vh;
+
+    object-fit: contain;
 }
 
 /* Spotlight */
